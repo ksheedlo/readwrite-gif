@@ -1,0 +1,25 @@
+{
+  "name": "readwrite-gif",
+  "version": "0.1.0",
+  "description": "Read and write GIFs",
+  "main": "gif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksheedlo/readwrite-gif.git"
+  },
+  "author": "Ken Sheedlo <ovrkenthousand@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksheedlo/readwrite-gif/issues"
+  },
+  "homepage": "https://github.com/ksheedlo/readwrite-gif",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1"
+  }
+}
