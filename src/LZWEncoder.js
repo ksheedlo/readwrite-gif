@@ -275,3 +275,10 @@ LZWEncoder = function() {
   LZWEncoder.apply(this, arguments);
   return exports;
 };
+
+if (typeof exports !== 'undefined') {
+  if (typeof module !== 'undefined' && module.exports) {
+    exports = module.exports = LZWEncoder;
+  }
+  exports.LZWEncoder = LZWEncoder;
+}
