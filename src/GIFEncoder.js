@@ -7,15 +7,8 @@
  * @version 0.1 AS3 implementation
  */
 
-var LZWEncoder_, NeuQuant_;
-
-if (typeof window === 'undefined') {
-  LZWEncoder_ = require('./LZWEncoder');
-  NeuQuant_ = require('./NeuQuant');
-} else {
-  LZWEncoder_ = LZWEncoder;
-  NeuQuant_ = NeuQuant;
-}
+var LZWEncoder = require('./LZWEncoder'),
+  NeuQuant = require('./NeuQuant');
 
 GIFEncoder = function() {
 
@@ -307,7 +300,7 @@ GIFEncoder = function() {
     var len = pixels.length;
     var nPix = len / 3;
     indexedPixels = [];
-    var nq = new NeuQuant_(pixels, len, sample);
+    var nq = new NeuQuant(pixels, len, sample);
 
     // initialize quantizer
     colorTab = nq.process(); // create reduced palette
@@ -509,7 +502,7 @@ GIFEncoder = function() {
    */
 
   var writePixels = function writePixels() {
-    var myencoder = new LZWEncoder_(width, height, indexedPixels, colorDepth);
+    var myencoder = new LZWEncoder(width, height, indexedPixels, colorDepth);
     myencoder.encode(out);
   };
 
@@ -530,9 +523,4 @@ GIFEncoder = function() {
 
 };
 
-if (typeof exports !== 'undefined') {
-  if (typeof module !== 'undefined' && module.exports) {
-    exports = module.exports = GIFEncoder;
-  }
-  exports.GIFEncoder = GIFEncoder;
-}
+module.exports = GIFEncoder;

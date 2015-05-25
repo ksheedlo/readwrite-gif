@@ -276,9 +276,4 @@ LZWEncoder = function() {
   return exports;
 };
 
-if (typeof exports !== 'undefined') {
-  if (typeof module !== 'undefined' && module.exports) {
-    exports = module.exports = LZWEncoder;
-  }
-  exports.LZWEncoder = LZWEncoder;
-}
+module.exports = LZWEncoder;

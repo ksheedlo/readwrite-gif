@@ -528,9 +528,4 @@ NeuQuant = function() {
   return exports;
 };
 
-if (typeof exports !== 'undefined') {
-  if (typeof module !== 'undefined' && module.exports) {
-    exports = module.exports = NeuQuant;
-  }
-  exports.NeuQuant = NeuQuant;
-}
+module.exports = NeuQuant;

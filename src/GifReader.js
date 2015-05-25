@@ -452,9 +452,4 @@ function GifReaderLZWOutputIndexStream(code_stream, p, output, output_length) {
   return output;
 }
 
-if (typeof exports !== 'undefined') {
-  if (typeof module !== 'undefined' && module.exports) {
-    exports = module.exports = GifReader;
-  }
-  exports.GifReader = GifReader;
-}
+module.exports = GifReader;

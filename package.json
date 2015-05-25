@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/ksheedlo/readwrite-gif",
   "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-concat": "^2.4.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.0.1"
+    "grunt": "0.4.5",
+    "grunt-browserify": "3.8.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-uglify": "0.9.1"
   }
 }
