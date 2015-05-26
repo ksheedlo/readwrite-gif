@@ -27,7 +27,7 @@
  * @version 0.1 AS3 implementation
  */
 
-NeuQuant = function() {
+var NeuQuant = function() {
 
   var exports = {};
   var netsize = 256; /* number of colours used */

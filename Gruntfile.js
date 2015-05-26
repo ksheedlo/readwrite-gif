@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
   grunt.config('browserify', {
     dist: {
-      src: ['./index.js'],
+      src: ['./browser.js'],
       dest: 'dist/GIF.js'
     }
   });
